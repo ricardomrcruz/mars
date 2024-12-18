@@ -1,6 +1,8 @@
 import "./App.css";
 import logo from "../src/assets/mars-logo.png";
 
+import { FiSearch } from "react-icons/fi";
+
 function App() {
   return (
     <>
@@ -12,11 +14,14 @@ function App() {
                 <img src={logo} className="h-8" alt="logo" />
               </div>
 
-              <div className="flex gap-2 text-white">
+              <div className="flex gap-5 text-white text-xl">
                 <a href="">À Propos</a>
                 <a href="">Nos Marques</a>
                 <a href="">Développement Durable</a>
                 <a href="">Actus et témoignages</a>
+              </div>
+              <div className="text-white text-2xl">
+                <FiSearch />
               </div>
             </div>
           </div>
