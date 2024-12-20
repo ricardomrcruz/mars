@@ -3,6 +3,7 @@ import './App.css'
 import Marquee from './components/Marquee'
 import { useState, useEffect } from 'react'
 import Nav from './components/Nav'
+import HeroVideo from './components/HeroVideo'
 
 function App() {
   const [currentWord, setCurrentWord] = useState('émotion')
@@ -34,19 +35,8 @@ function App() {
     <>
       <div className="w-full flex flex-col text-black overflow-hidden">
         <Nav />
-        <div className="relative w-full h-full ">
-          <video
-            src="/video_header.mp4"
-            playsInline
-            className="w-full
-            h-screen
-          object-cover
-          brightness-[75%]"
-            autoPlay
-            muted
-            loop
-          ></video>
-        </div>
+        <HeroVideo />
+
         <div className="absolute top-[22rem] left-0 w-full z-40 text-white">
           <div className="max-w-[1700px] mx-auto px-4 md:px-8 lg:px-12 w-full">
             <p className="text-[6rem] font-medium leading-[80px] font-baskerville">
