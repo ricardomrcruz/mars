@@ -17,19 +17,8 @@ export default function Marquee() {
   const row2 = [b7, b8, b9, b10, b11, b12];
 
   return (
-    <div className="z-40 min-h-screen w-full bg-gray-100">
-      {/* <div className="mx-auto w-full max-w-[1440px] px-4 pt-[4rem] text-center md:px-8 lg:px-12">
-        <div className="mx-auto max-w-[800px] ">
-          <p className="mx-auto max-w-[35rem] py-5 text-3xl font-semibold text-slate-800 leading-6">
-            Une Famille Des Marques Iconiques.
-          </p>
-          <p className="text-neutral-600">
-            Un siècle d'innovation: du chocolat à la nutrition animale, <br />{" "}
-            nous enrichissons le quotidien depuis plus de 100 ans.
-          </p>
-        </div>
-      </div> */}
-      <div className="relative overflow-hidden mx-auto max-w-[1400px] py-14 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+    <div className="z-40 min-h-screen w-full bg-gray-100 pt-[5rem]">
+      <div className="relative overflow-hidden mx-auto max-w-[1400px]  [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         {/* row 1 */}
         <div className="flex gap-4 animate-marquee whitespace-nowrap ">
           {row1.map((item, index) => (
@@ -85,6 +74,17 @@ export default function Marquee() {
               />
             </div>
           ))}
+        </div>
+      </div>
+      <div className="mx-auto w-full max-w-[1440px] px-4 pt-[2rem]  text-center md:px-8 lg:px-12">
+        <div className="mx-auto max-w-[800px] ">
+          <p className="mx-auto w-full py-5 text-4xl font-semibold text-slate-800 leading-6">
+            Une Famille Des Marques Iconiques.
+          </p>
+          <p className="text-neutral-600">
+            Un siècle d'innovation: du chocolat à la nutrition animale, <br />{" "}
+            nous enrichissons le quotidien depuis plus de 100 ans.
+          </p>
         </div>
       </div>
     </div>
