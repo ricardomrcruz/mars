@@ -34,8 +34,8 @@ function App() {
   return (
     <>
       <div className="w-full flex flex-col text-black overflow-hidden">
-        <nav className="absolute top-0 left-0 w-full z-40">
-          <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 w-full">
+        <nav className="absolute top-0 left-0 w-full z-40 ">
+          <div className="max-w-[1700px] mx-auto px-4 md:px-8 lg:px-12 w-full">
             <div className="flex items-center justify-between py-6">
               <div className=" items-center">
                 <img src={logo} className="h-10" alt="logo" />
@@ -66,9 +66,9 @@ function App() {
             loop
           ></video>
         </div>
-        <div className="absolute top-[32rem] left-0 w-full z-40 text-white">
-          <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 w-full">
-            <p className="text-[4rem] font-medium leading-[50px] font-baskerville">
+        <div className="absolute top-[22rem] left-0 w-full z-40 text-white">
+          <div className="max-w-[1700px] mx-auto px-4 md:px-8 lg:px-12 w-full">
+            <p className="text-[6rem] font-medium leading-[80px] font-baskerville">
               Mars n'est pas
               <br /> qu'un chocolat, <br />
               c'est une <span className="fade-in">{currentWord}</span>

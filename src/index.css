@@ -9,8 +9,41 @@
 
 body,
 html {
-  font-family: "Lato", serif;
+  font-family: "Inter", serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+  
+}
+
+.animate-marquee{
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+}
+
+.animate-marquee2{
+  animation: marquee2 20s linear infinite;
+}
+
+.fade-marquee{
+  mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)
 }
