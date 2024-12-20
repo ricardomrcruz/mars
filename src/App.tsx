@@ -1,5 +1,6 @@
 import "./App.css";
 import logo from "../src/assets/mars-logo.png";
+import Marquee from "./components/Marquee";
 import { useState, useEffect } from "react";
 
 import { FiSearch } from "react-icons/fi";
@@ -80,6 +81,7 @@ function App() {
             </p>
           </div>
         </div>
+        <Marquee />
       </div>
     </>
   );
