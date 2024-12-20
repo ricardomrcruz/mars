@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full flex flex-col text-black overflow-hidden">
+      <div className="w-full flex flex-col bg-gray-100 text-black overflow-hidden">
         <Nav />
         <HeroVideo />
 
@@ -53,6 +53,48 @@ function App() {
           </div>
         </div>
         <Marquee />
+        <div className="min-h-screen ">
+          <div className="max-w-[1700px] mx-auto px-4 md:px-8 lg:px-12 w-full ">
+            <h3 className="uppercase text-gray-400 font-extrabold text-xl pt-20 pb-4">
+              Actualités Mars France
+            </h3>
+            <div className="w-full flex h-[60vh] justify-between">
+              <div className="w-[65%] h-full bg-slate-200"></div>
+              <div className="w-[35%] h-full relative ">
+                <div className="px-10">
+                  <div>
+                    <p className="uppercase text-sm">Développement Durable</p>
+
+                    <p className="font-bold text-gray-900 text-3xl pt-[2rem] capitalize">
+                      Mars réalise une réduction record de ses émissions de
+                      carbone en 2024
+                    </p>
+                    <p className="uppercase text-sm pt-4 font-light">
+                      Juillet 24 2024
+                    </p>
+                  </div>
+
+                  <p className="absolute bottom-0 font-light w-[80%]  justify-start text-justify">
+                    Mars continue de découpler les émissions de carbone de sa
+                    croissance économique en réduisant les émissions absolues de
+                    GES dans l'ensemble de sa chaîne de valeur de 16 % depuis
+                    2015.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="my-7 bg-gray-300 h-[1px]"></div>
+            <div className="w-full flex  justify-between">
+              <div className="bg-slate-300 w-[20%] h-24"></div>
+              <div className="w-[1px] h-[7rem] bg-slate-300 mx-5" />
+              <div className="bg-slate-300  w-[20%] h-24"></div>
+              <div className="w-[1px] h-[7rem] bg-slate-300 mx-5" />
+              <div className="bg-slate-300  w-[20%] h-24"></div>
+              <div className="w-[1px] h-[7rem] bg-slate-300 mx-5" />
+              <div className="bg-slate-300  w-[20%] h-24"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
