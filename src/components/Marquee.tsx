@@ -17,7 +17,7 @@ export default function Marquee() {
   const row2 = [b7, b8, b9, b10, b11, b12]
 
   return (
-    <div className="z-40  w-full bg-gray-100 pt-[5rem]">
+    <div className="z-40  w-full bg-gray-100 pt-16">
       <div className="relative overflow-hidden mx-auto max-w-[1400px]  [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
         {/* row 1 */}
         <div className="flex gap-4 animate-marquee whitespace-nowrap ">
@@ -76,15 +76,23 @@ export default function Marquee() {
           ))}
         </div>
       </div>
-      <div className="mx-auto w-full max-w-[1440px] px-4 pt-[2rem]  text-center md:px-8 lg:px-12">
+      <div className="mx-auto w-full max-w-[1440px] px-4 pt-[1rem]  text-center md:px-8 lg:px-12">
         <div className="mx-auto max-w-[800px] ">
-          <p className="mx-auto w-full py-5 text-4xl font-semibold text-slate-800 leading-6">
+          <p className="mx-auto w-full py-2 text-3xl md:text-3xl lg:text-4xl font-semibold text-slate-700  ">
             Une Famille Des Marques Iconiques.
           </p>
-          <p className="text-neutral-600">
+          <p className="text-neutral-700 text-md md:text-base lg:text-lg  ">
             Un siècle d'innovation: du chocolat à la nutrition animale, <br />{' '}
             nous enrichissons le quotidien depuis plus de 100 ans.
           </p>
+          <button
+            className="mt-4 px-4 md:px-8 py-2 md:py-3 bg-blue-800 
+            text-white rounded-md shadow-md transition-all
+            duration-300 hover:bg-blue-700 hover:shadow-lg
+            active:bg-gray-400 active:shadow-sm text-sm md:text-base"
+          >
+            Découvrez nos marques
+          </button>
         </div>
       </div>
     </div>
