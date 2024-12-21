@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react'
 import Nav from './components/Nav'
 import HeroVideo from './components/HeroVideo'
 
+import news1img from './assets/news1.jpg'
+
 function App() {
   const [currentWord, setCurrentWord] = useState('émotion')
 
@@ -44,11 +46,11 @@ function App() {
               <br /> qu'un chocolat, <br />
               c'est une <span className="fade-in">{currentWord}</span>
             </p>
-            <p className="text-slate-200 text-lg font-medium py-5 leading-6 max-w-[35rem]">
-              L’implantation du Groupe Mars en France date de 1967. Mars compte
-              aujourd’hui dans l’hexagone plus de 4 000 collaborateurs, 9 sites
-              dont 8 usines (4 en Alsace). Ces cinq dernières années, Mars a
-              investi en France plus de 300 millions d’euros.
+            <p className="text-gray-100 text-lg font-medium py-5 leading-6 max-w-[35rem]">
+              Implanté en France depuis 1967, Mars Incorporated compte
+              aujourd'hui plus de 4 000 collaborateurs dans l'hexagone, répartis
+              sur 9 sites dont 8 usines (4 en Alsace). Ces cinq dernières
+              années, Mars a investi en France plus de 300 millions d'euros.
             </p>
           </div>
         </div>
@@ -59,11 +61,17 @@ function App() {
               Actualités Mars France
             </h3>
             <div className="w-full flex h-[60vh] justify-between">
-              <div className="w-[65%] h-full bg-slate-200"></div>
+              <div className="w-[65%] h-full bg-slate-200">
+                <img
+                  src={news1img}
+                  className="h-full w-full object-cover"
+                  alt=""
+                />
+              </div>
               <div className="w-[35%] h-full relative ">
                 <div className="px-10">
                   <div>
-                    <p className="uppercase text-sm">Développement Durable</p>
+                    <p className="uppercase text-sm">futur green</p>
 
                     <p className="font-bold text-gray-900 text-3xl pt-[2rem] capitalize">
                       Mars réalise une réduction record de ses émissions de
@@ -85,12 +93,18 @@ function App() {
             </div>
             <div className="my-7 bg-gray-300 h-[1px]"></div>
             <div className="w-full flex  justify-between">
-              <div className="bg-slate-300 w-[20%] h-24"></div>
-              <div className="w-[1px] h-[7rem] bg-slate-300 mx-5" />
+              <div className="bg-slate-300 w-[20%] h-24 flex justify-between">
+                <div className="w-[70%]">
+                  <p></p>
+                  <p></p>
+                </div>
+                <img src={news1img} className=" w-[45%]  object-cover" alt="" />
+              </div>
+              <div className="w-[1px] h-[7rem] bg-slate-300" />
               <div className="bg-slate-300  w-[20%] h-24"></div>
-              <div className="w-[1px] h-[7rem] bg-slate-300 mx-5" />
+              <div className="w-[1px] h-[7rem] bg-slate-300 " />
               <div className="bg-slate-300  w-[20%] h-24"></div>
-              <div className="w-[1px] h-[7rem] bg-slate-300 mx-5" />
+              <div className="w-[1px] h-[7rem] bg-slate-300 " />
               <div className="bg-slate-300  w-[20%] h-24"></div>
             </div>
           </div>
