@@ -21,11 +21,11 @@ export default function News() {
             />
           </div>
           <div className="w-full lg:w-[35%] h-auto lg:h-full relative p-4 sm:p-0 lg:p-0 ">
-            <div className="lg:px-10 ">
+            <div className="lg:px-10 cursor-pointer">
               <div>
-                <p className="uppercase text-md md:block hidden">futur green</p>
+                <p className="uppercase text-md lg:block hidden">RSE</p>
 
-                <p className="hover:underline underline-offset-2 hover:cursor-pointer font-bold text-gray-900 lg:text-3xl text-xl pt-4 lg:pt-[2rem] capitalize">
+                <p className="hover:underline underline-offset-2  font-bold text-gray-900 lg:text-3xl text-xl pt-4 lg:pt-[2rem] capitalize">
                   Mars réalise une réduction record de ses émissions de carbone
                   en 2024
                 </p>
@@ -47,10 +47,9 @@ export default function News() {
         <div className="w-full flex flex-wrap  justify-between">
           <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[24%] h-auto flex justify-between">
             <div className="w-[50%] h-auto">
-              <p className="pb-4 text-xs">futur green</p>
+              <p className="pb-4 text-xs">Mars Wrigley Alsace</p>
               <p className="font-semibold text-sm">
-                Mars réalise une réduction record de ses émissions de carbone en
-                2024
+                La Vapeur Verte : Un Pas de Géant vers le Zéro Carbone
               </p>
             </div>
             <img src={news2img} className=" w-[39%] object-cover" alt="" />
@@ -58,10 +57,9 @@ export default function News() {
           <div className="w-[1px] h-[8.5rem] bg-slate-300" />
           <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[24%] h-auto flex justify-between">
             <div className="w-[50%] ">
-              <p className="pb-4 text-xs">futur green</p>
+              <p className="pb-4 text-xs">Gestion Durable</p>
               <p className="font-semibold text-sm">
-                Mars réalise une réduction record de ses émissions de carbone en
-                2024
+                Gérer Nos Terres pour les Générations Futures
               </p>
             </div>
             <img src={news3img} className=" w-[39%] object-cover" alt="" />
@@ -69,10 +67,9 @@ export default function News() {
           <div className=" sm:hidden w-[1px] h-[8.5rem] bg-slate-300" />
           <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[24%] h-auto flex justify-between">
             <div className="w-[50%] ">
-              <p className="pb-4 text-xs">futur green</p>
+              <p className="pb-4 text-xs">M&Ms</p>
               <p className="font-semibold text-sm">
-                Mars réalise une réduction record de ses émissions de carbone en
-                2024
+                La famille M&M’S® s’agrandit !
               </p>
             </div>
             <img src={news4img} className=" w-[39%] object-cover" alt="" />
@@ -80,10 +77,9 @@ export default function News() {
           <div className=" w-[1px] h-[8.5rem] bg-slate-300" />
           <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[24%] h-auto flex justify-between">
             <div className="w-[50%] ">
-              <p className="pb-4 text-xs">futur green</p>
+              <p className="pb-4 text-xs">Innovation Laitière</p>
               <p className="font-semibold text-sm">
-                Mars réalise une réduction record de ses émissions de carbone en
-                2024
+                Moo'vement Durable : Notre Approche de l'Avenir Laitiers
               </p>
             </div>
             <img src={news5img} className=" w-[39%] object-cover" alt="" />
