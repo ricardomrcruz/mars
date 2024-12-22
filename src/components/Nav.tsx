@@ -7,8 +7,9 @@ import {
   IoMdReturnRight,
 } from 'react-icons/io'
 import { CiSquareChevRight } from 'react-icons/ci'
-import { FaDog, FaBowlRice } from 'react-icons/fa6'
+import { FaDog, FaBowlRice, FaEarthAmericas } from 'react-icons/fa6'
 import { GiChocolateBar } from 'react-icons/gi'
+import { RiCommunityFill, RiMentalHealthFill } from 'react-icons/ri'
 
 {
   /* <IoIosClose /> */
@@ -156,6 +157,7 @@ export default function Nav() {
                   </div>
                 </div>
               </button>
+              {/* nav link 2 */}
               <button className=" py-1 group">
                 <div className="flex uppercase hover:font-semibold  hover:text-blue-800">
                   Nos marques
@@ -164,7 +166,7 @@ export default function Nav() {
                   </span>
                 </div>
                 {/* DROPDOWNLINKS2 */}
-                <div className="pt-3  bg-gray-200 ">
+                <div className="pt-3  bg-gray-200 hidden">
                   <p className="text-sm text-left px-1">
                     Depuis plus d'un siècle, nous sommes convaincus que le monde
                     que nous voulons demain dépend de la façon dont nous
@@ -242,12 +244,91 @@ export default function Nav() {
                   </div>
                 </div>
               </button>
-              <button className="hover:text-blue-800 hover:font-semibold py-1 group flex">
-                <div className="flex uppercase">
-                  développement durable{' '}
+              {/* NAVLINK */}
+              <button className=" py-1 group">
+                <div className="flex uppercase hover:font-semibold  hover:text-blue-800">
+                  développement durable
                   <span className=" hidden group-hover:block px-3 pt-1">
                     <IoMdArrowDropdown color="black" />
                   </span>
+                </div>
+                {/* DROPDOWNLINKS2 */}
+                <div className="pt-3  bg-gray-200 ">
+                  <p className="text-sm text-left px-1">
+                    Nous avons à cœur de bâtir un monde durable et sûr pour
+                    l'ensemble des partenaires et des communautés avec lesquels
+                    nous travaillons.
+                  </p>
+                  <button className="hover:underline hover:text-blue-800 text-sm flex  pt-2 px-1 group/a">
+                    Vue d'ensemble
+                    <span className="pt-1 px-2">
+                      <IoMdReturnRight className="text-black group-hover/a:text-blue-800 hover:font-bold" />
+                    </span>
+                  </button>
+                  <div className="pt-8 p-1 text-left">
+                    <div className="leading-loose">
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      {/* PLANET */}
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[4rem]" />
+                        </div>
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                          <p className="text-sm pb-3 text-left max-w-[85%]">
+                            Découvrez comment nos objectifs environnementaux
+                            ambitieux guident notre vision d'une planète plus
+                            saine.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      {/* COMMUNITY */}
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <RiCommunityFill className="text-[4rem]" />
+                        </div>
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour les communautés
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                          <p className="text-sm pb-3 text-left max-w-[85%]">
+                            Découvrez comment nos objectifs environnementaux
+                            ambitieux guident notre vision d'une planète plus
+                            saine.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      {/* FOODNUTRITION */}
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <RiMentalHealthFill className="text-[4rem]" />
+                        </div>
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour le bien-être
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                          <p className="text-sm pb-3 text-left max-w-[85%]">
+                            Découvrez nos engagements pour le bien-être des
+                            personnes et des animaux à travers nos produits et
+                            services.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </button>
               <button className="hover:text-blue-800 hover:font-semibold py-1 group flex">
