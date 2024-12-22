@@ -1,6 +1,7 @@
 import logo from '../assets/mars-logo.png'
 import { FiSearch } from 'react-icons/fi'
-import { IoIosMenu, IoIosClose } from 'react-icons/io'
+import { IoIosMenu, IoIosClose, IoMdArrowDropdown } from 'react-icons/io'
+import { CiSquareChevRight } from 'react-icons/ci'
 
 {
   /* <IoIosClose /> */
@@ -45,18 +46,18 @@ export default function Nav() {
 
             {/* NAV DESKTOP LINKS */}
             <div className="lg:flex hidden gap-5 uppercase lg:text-lg text-sm">
-              <a className="hover:text-blue-800 hover:font-semibold" href="">
+              <button className="hover:text-blue-800 hover:font-semibold">
                 À Propos
-              </a>
-              <a className="hover:text-blue-800 hover:font-semibold" href="">
+              </button>
+              <button className="hover:text-blue-800 hover:font-semibold">
                 Nos Marques
-              </a>
-              <a className="hover:text-blue-800 hover:font-semibold" href="">
+              </button>
+              <button className="hover:text-blue-800 hover:font-semibold">
                 Développement Durable
-              </a>
-              <a className="hover:text-blue-800 hover:font-semibold" href="">
+              </button>
+              <button className="hover:text-blue-800 hover:font-semibold">
                 Actus et témoignages
-              </a>
+              </button>
             </div>
             <div className="hidden lg:block text-white text-2xl">
               <FiSearch color={`${isScrolled ? 'black' : 'white'}`} />
@@ -85,31 +86,92 @@ export default function Nav() {
           {/* MOBILE MENU NAV */}
           <div className="lg:hidden fixed h-full w-full bg-gray-100 pt-10">
             <div className="h-[1px] w-[95%] mx-auto bg-slate-300"></div>
-            <div className="flex flex-col gap-4 uppercase text-lg pt-10 px-4 md:px-8 lg:px-12 text-slate-900">
-              <a
-                className="hover:text-blue-800 hover:font-semibold py-1"
-                href=""
-              >
-                À propros
-              </a>
-              <a
-                className="hover:text-blue-800 hover:font-semibold py-1"
-                href=""
-              >
-                Nos marques
-              </a>
-              <a
-                className="hover:text-blue-800 hover:font-semibold py-1"
-                href=""
-              >
-                développement durable
-              </a>
-              <a
-                className="hover:text-blue-800 hover:font-semibold py-1"
-                href=""
-              >
-                Actus et témoignages
-              </a>
+            <div className="flex flex-col gap-4  text-lg pt-10 px-4 md:px-8 lg:px-12 text-slate-900">
+              <button className=" text-left  py-1  group">
+                <div className="hover:text-blue-800 hover:font-semibold flex uppercase">
+                  À propros
+                  <span className=" hidden group-hover:block px-3 pt-1">
+                    <IoMdArrowDropdown color="black" />
+                  </span>
+                </div>
+                <div className="pt-3  bg-gray-200">
+                  <p className="text-sm text-left px-1">
+                    Depuis plus d'un siècle, nous sommes convaincus que le monde
+                    que nous voulons demain dépend de la façon dont nous
+                    agissons aujourd'hui.
+                  </p>
+                  <button className="hover:underline text-sm flex  pt-2 px-1">
+                    Vue d'ensemble{' '}
+                    <span className="pt-1 px-3">
+                      <CiSquareChevRight color="black" />
+                    </span>
+                  </button>
+                  <div className="pt-8 p-1">
+                    <div className=" leading-loose">
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <p className="py-3 flex hover:underline">
+                        Les Cinq Principes
+                        <span className="pt-2 px-3">
+                          <CiSquareChevRight color="black" />
+                        </span>
+                      </p>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+
+                      <p className="py-3 flex hover:underline">
+                        Mars Compass
+                        <span className="pt-2 px-3">
+                          <CiSquareChevRight color="black" />
+                        </span>
+                      </p>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <p className="py-3 flex hover:underline">
+                        L'équipe de direction
+                        <span className="pt-2 px-3">
+                          <CiSquareChevRight color="black" />
+                        </span>
+                      </p>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <p className="py-3 flex hover:underline">
+                        Notre histoire
+                        <span className="pt-2 px-3">
+                          <CiSquareChevRight color="black" />
+                        </span>
+                      </p>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <p className="py-3 flex hover:underline">
+                        Politiques et pratiques
+                        <span className="pt-2 px-3">
+                          <CiSquareChevRight color="black" />
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </button>
+              <button className="hover:text-blue-800 hover:font-semibold py-1 group flex ">
+                <div className="flex uppercase">
+                  Nos marques
+                  <span className=" hidden group-hover:block px-3 pt-1">
+                    <IoMdArrowDropdown color="black" />
+                  </span>
+                </div>
+              </button>
+              <button className="hover:text-blue-800 hover:font-semibold py-1 group flex">
+                <div className="flex uppercase">
+                  développement durable{' '}
+                  <span className=" hidden group-hover:block px-3 pt-1">
+                    <IoMdArrowDropdown color="black" />
+                  </span>
+                </div>
+              </button>
+              <button className="hover:text-blue-800 hover:font-semibold py-1 group flex">
+                <div className="flex uppercase">
+                  Actus et témoignages{' '}
+                  <span className=" hidden group-hover:block px-3 pt-1 ">
+                    <IoMdArrowDropdown color="black" />
+                  </span>
+                </div>
+              </button>
             </div>
           </div>
         </div>
