@@ -39,12 +39,12 @@ function App() {
 
         <div className="absolute top-[22rem] left-0 w-full z-40 text-white">
           <div className="max-w-[1700px] mx-auto px-4 md:px-8 lg:px-12 w-full">
-            <p className="text-[6rem] font-medium leading-[80px] font-baskerville">
+            <p className="lg:text-[6rem] md:text-[4rem] text-[3.5rem] font-medium lg:leading-[80px]  md:leading-[60px] leading-[50px] font-baskerville">
               Mars, bien plus
               <br /> qu'un chocolat, <br />
-              c'est une <span className="fade-in">{currentWord}</span>
+              une <span className="fade-in">{currentWord}</span>
             </p>
-            <p className="text-gray-100 text-lg font-medium py-5 leading-6 max-w-[35rem]">
+            <p className="text-gray-100 lg:text-lg text-md font-medium py-5 lg:leading-6 lg:max-w-[36rem] md:max-w-[50%] max-w-[75%]">
               Implanté en France depuis 1967, Mars Incorporated compte
               aujourd'hui plus de 4 000 collaborateurs dans l'hexagone, répartis
               sur 9 sites dont 8 usines (4 en Alsace). Ces cinq dernières
