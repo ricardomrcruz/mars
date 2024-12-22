@@ -1,9 +1,14 @@
 import logo from '../assets/mars-logo.png'
 import { FiSearch } from 'react-icons/fi'
-import { IoIosMenu, IoIosClose, IoMdArrowDropdown } from 'react-icons/io'
+import {
+  IoIosMenu,
+  IoIosClose,
+  IoMdArrowDropdown,
+  IoMdReturnRight,
+} from 'react-icons/io'
 import { CiSquareChevRight } from 'react-icons/ci'
-import { IoMdReturnRight } from 'react-icons/io'
-import { FaDog } from 'react-icons/fa6'
+import { FaDog, FaBowlRice } from 'react-icons/fa6'
+import { GiChocolateBar } from 'react-icons/gi'
 
 {
   /* <IoIosClose /> */
@@ -174,6 +179,7 @@ export default function Nav() {
                   <div className="pt-8 p-1 text-left">
                     <div className="leading-loose">
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      {/* PETCARE */}
                       <div className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
                           <FaDog className="text-[4rem]" />
@@ -192,22 +198,46 @@ export default function Nav() {
                           </p>
                         </div>
                       </div>
-
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <p className="py-3 flex  hover:text-blue-800 hover:underline group/c">
-                        Snacking
-                        <span className="pt-2 px-2 text-lg">
-                          <CiSquareChevRight className="text-black text-xl group-hover/c:text-blue-800 hover:text-blue-800 transition-colors " />
-                        </span>
-                      </p>
+                      {/* SNACKING */}
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <GiChocolateBar className="text-[4rem]" />
+                        </div>
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Snacking
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                          <p className="text-sm pb-3 text-left max-w-[85%]">
+                            Nutrition, santé, et services vétérinaires pour
+                            créer un monde meilleur pour les animaux de
+                            compagnie.
+                          </p>
+                        </div>
+                      </div>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <p className="py-3 flex  hover:text-blue-800 hover:underline group/d">
-                        Food & Nutrition
-                        <span className="pt-2 px-2 text-lg">
-                          <CiSquareChevRight className="text-black text-xl group-hover/d:text-blue-800 hover:text-blue-800 transition-colors " />
-                        </span>
-                      </p>
-                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      {/* FOODNUTRITION */}
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaBowlRice className="text-[4rem]" />
+                        </div>
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Snacking
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                          <p className="text-sm pb-3 text-left max-w-[85%]">
+                            Nutrition, santé, et services vétérinaires pour
+                            créer un monde meilleur pour les animaux de
+                            compagnie.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
