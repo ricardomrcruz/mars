@@ -5,23 +5,27 @@ import {
   IoIosClose,
   IoMdArrowDropdown,
   IoMdReturnRight,
+  IoIosBusiness,
 } from 'react-icons/io'
 import { CiSquareChevRight } from 'react-icons/ci'
 import { FaDog, FaBowlRice, FaEarthAmericas } from 'react-icons/fa6'
-import { GiChocolateBar } from 'react-icons/gi'
-import { RiCommunityFill, RiMentalHealthFill } from 'react-icons/ri'
-import { IoIosBusiness } from 'react-icons/io' //big company
-import { LuNewspaper } from 'react-icons/lu' // news
-import { GiEcology } from 'react-icons/gi'
 import { FaCat } from 'react-icons/fa'
-
-{
-  /* <IoIosClose /> */
-}
+import { RiCommunityFill, RiMentalHealthFill } from 'react-icons/ri'
+import { LuNewspaper } from 'react-icons/lu'
+import { GiEcology, GiMaterialsScience, GiChocolateBar } from 'react-icons/gi'
+import { MdDiversity1 } from 'react-icons/md'
+import { GrTechnology, GrArticle } from 'react-icons/gr'
+import { SiFuturelearn } from 'react-icons/si'
+import { PiTelevision } from 'react-icons/pi'
+import {
+  FaInstagramSquare,
+  FaFacebook,
+  FaLinkedin,
+  FaYoutube,
+} from 'react-icons/fa'
 
 import { useState } from 'react'
-
-import { color, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useScrollPosition } from '../hooks/useScrollPosition'
 
 export default function Nav() {
@@ -53,7 +57,7 @@ export default function Nav() {
           <div className="flex items-center px-4 md:px-8 lg:px-12 justify-between ">
             {/* LOGO */}
             <div className=" items-center">
-              <img src={logo} className="md:h-10 h-8 " alt="logo" />
+              <img src={logo} className="md:h-10 h-9 " alt="logo" />
             </div>
 
             {/* NAV DESKTOP LINKS */}
@@ -96,13 +100,20 @@ export default function Nav() {
           </div>
 
           {/* MOBILE MENU NAV */}
-          <div className="lg:hidden fixed h-full w-full bg-gray-100 pt-10">
-            <div className="h-[1px] w-[95%] mx-auto bg-slate-300"></div>
-            <div className="flex flex-col gap-4  text-lg pt-10 px-4 md:px-8 lg:px-12 text-slate-900">
+          <div className="lg:hidden fixed inset-0 top-[4.1rem] bg-gray-100 pt-6 overflow-y-auto">
+            {/* <div className="h-[1px] w-[95%] mx-auto bg-slate-300"></div> */}
+            <div className="relative mx-auto text-center pb-5 ">
+              <input
+                type="text"
+                placeholder="Recherche..."
+                className=" bg-white w-[96%] md:w-[94%] mx-auto uppercase border-gray-900 border p-1 pl-2 rounded-sm text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-gray-200 "
+              />
+            </div>
+            <div className="flex flex-col gap-4 text-lg  px-4 md:px-8 lg:px-12 text-slate-900">
               <button className=" text-left  py-1  group">
                 <div className="hover:text-blue-800 hover:font-semibold flex uppercase">
                   À propros
-                  <span className=" hidden group-hover:block px-3 pt-1">
+                  <span className="  px-3 pt-1">
                     <IoMdArrowDropdown color="black" />
                   </span>
                 </div>
@@ -165,7 +176,7 @@ export default function Nav() {
               <button className=" py-1 group">
                 <div className="flex uppercase hover:font-semibold  hover:text-blue-800">
                   Nos marques
-                  <span className=" hidden group-hover:block px-3 pt-1">
+                  <span className="  px-3 pt-1">
                     <IoMdArrowDropdown color="black" />
                   </span>
                 </div>
@@ -252,7 +263,7 @@ export default function Nav() {
               <button className=" py-1 group">
                 <div className="flex uppercase hover:font-semibold  hover:text-blue-800">
                   développement durable
-                  <span className=" hidden group-hover:block px-3 pt-1">
+                  <span className="  px-3 pt-1">
                     <IoMdArrowDropdown color="black" />
                   </span>
                 </div>
@@ -336,15 +347,15 @@ export default function Nav() {
                 </div>
               </button>
               {/* ACTUS ET TEMOIGNAGES */}
-              <button className=" py-1 group">
+              <div className=" py-1 group ">
                 <div className="flex uppercase hover:font-semibold  hover:text-blue-800">
                   Actus et Témoignages
-                  <span className=" hidden group-hover:block px-3 pt-1">
+                  <span className="  px-3 pt-1">
                     <IoMdArrowDropdown color="black" />
                   </span>
                 </div>
                 {/* DROPDOWNLINKS2 */}
-                <div className="pt-3  bg-gray-200 ">
+                <div className="pt-3  bg-gray-200 hidden">
                   <p className="text-sm text-left px-1">
                     Découvrez comment nos Associés créent un monde meilleur pour
                     demain dans nos derniers articles, actualités et communiqués
@@ -359,132 +370,246 @@ export default function Nav() {
                   <div className="pt-8 p-1 text-left">
                     <div className="leading-loose">
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <div className="pt-4 text-xl">Explorer par sujet</div>
-                      {/* PLANET */}
-                      <div className="flex">
+                      <div className="pt-4 pb-2 text-xl text-blue-900">
+                        Explorer par sujet
+                      </div>
+                      {/* EXPLORER PAR SUJET */}
+                      <button className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
-                          <FaEarthAmericas className="text-[1.5rem]" />
+                          <IoIosBusiness className="text-[1.5rem]" />
                         </div>
 
                         <div>
                           <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Engagés pour la planète
+                            Actualité de l'entreprise
                             <span className="pt-2 px-2 text-lg">
                               <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
                             </span>
                           </p>
                         </div>
-                      </div>
+                      </button>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <div className="flex">
+                      <button className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
-                          <FaEarthAmericas className="text-[1.5rem]" />
+                          <LuNewspaper className="text-[1.5rem]" />
                         </div>
 
                         <div>
                           <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Engagés pour la planète
+                            L'actualité de nos marques
                             <span className="pt-2 px-2 text-lg">
                               <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
                             </span>
                           </p>
                         </div>
-                      </div>
+                      </button>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <div className="flex">
+                      <button className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
-                          <FaEarthAmericas className="text-[1.5rem]" />
+                          <GiEcology className="text-[1.5rem]" />
                         </div>
 
                         <div>
                           <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Engagés pour la planète
+                            Développement durable
                             <span className="pt-2 px-2 text-lg">
                               <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
                             </span>
                           </p>
                         </div>
-                      </div>
+                      </button>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <div className="flex">
+                      <button className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
-                          <FaEarthAmericas className="text-[1.5rem]" />
+                          <FaCat className="text-[1.5rem]" />
                         </div>
 
                         <div>
                           <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Engagés pour la planète
+                            Prendre soin des animaux
                             <span className="pt-2 px-2 text-lg">
                               <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
                             </span>
                           </p>
                         </div>
-                      </div>
+                      </button>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <div className="flex">
+                      <button className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
-                          <FaEarthAmericas className="text-[1.5rem]" />
+                          <MdDiversity1 className="text-[1.5rem]" />
                         </div>
 
                         <div>
                           <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Engagés pour la planète
+                            Inclusion et diversité
                             <span className="pt-2 px-2 text-lg">
                               <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
                             </span>
                           </p>
                         </div>
-                      </div>
+                      </button>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <div className="flex">
+                      <button className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
-                          <FaEarthAmericas className="text-[1.5rem]" />
+                          <GrTechnology className="text-[1.5rem]" />
                         </div>
 
                         <div>
                           <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Engagés pour la planète
+                            Innovation et technologie
                             <span className="pt-2 px-2 text-lg">
                               <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
                             </span>
                           </p>
                         </div>
-                      </div>
+                      </button>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <div className="flex">
+                      <button className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
-                          <FaEarthAmericas className="text-[1.5rem]" />
+                          <RiMentalHealthFill className="text-[1.5rem]" />
                         </div>
 
                         <div>
                           <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Engagés pour la planète
+                            Santé et bien-être
                             <span className="pt-2 px-2 text-lg">
                               <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
                             </span>
                           </p>
                         </div>
-                      </div>
+                      </button>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                      <div className="flex">
+                      <button className="flex">
                         <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
-                          <FaEarthAmericas className="text-[1.5rem]" />
+                          <GiMaterialsScience className="text-[1.5rem]" />
                         </div>
-
                         <div>
                           <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Engagés pour la planète
+                            Science et recherche
                             <span className="pt-2 px-2 text-lg">
                               <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
                             </span>
                           </p>
                         </div>
-                      </div>
+                      </button>
                       <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+
+                      <div className="pt-4 pb-2 text-xl text-blue-900">
+                        Explorer par type
+                      </div>
+                      {/* EXPLORER PAR TYPE */}
+                      <button className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <SiFuturelearn className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Perspectives
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </button>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <button className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <PiTelevision className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Communiqués de presse
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </button>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <button className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <GrArticle className="text-[1.5rem]" />
+                        </div>
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Articles
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </button>
                     </div>
                   </div>
                 </div>
-              </button>
+              </div>
+
+              {/* BOTTOM LINKS MOBILE NAV */}
+              <div className="absolute bottom-[8rem] text-sm font-semibold leading-[3rem]">
+                <div>
+                  <button className="uppercase text-left">
+                    <span className="border-black border-2 p-2 hover:bg-slate-200">
+                      Nous Contacter
+                    </span>
+                  </button>
+                </div>
+                <div>
+                  <button className="uppercase text-left">
+                    <span className="border-black border-2 p-2 hover:bg-slate-200">
+                      Carrières
+                    </span>
+                  </button>
+                </div>
+                <div>
+                  <button className="uppercase text-left">
+                    <span className="border-black border-2 p-2 hover:bg-slate-200">
+                      Demande des médias
+                    </span>
+                  </button>
+                </div>
+                <div>
+                  <button className="uppercase text-left">
+                    <span className="border-black border-2 p-2 hover:bg-slate-200">
+                      Politique et pratiques
+                    </span>
+                  </button>
+                </div>
+                <div>
+                  <button className="uppercase text-left">
+                    <span className="border-black border-2 p-2 hover:bg-slate-200 ">
+                      Chaine d'approvisionnnement
+                    </span>
+                  </button>
+                </div>
+                <div>
+                  <button className="uppercase text-left">
+                    <span className="border-black border-2 p-2 hover:bg-slate-200">
+                      Rapports dur le développement durable
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-gray-500 text-[2.7rem] font-semibold  ">
+                <div className="gap-4 flex">
+                  <button>
+                    <FaInstagramSquare />
+                  </button>
+                  <button>
+                    <FaFacebook className="text-[2.5rem]" />
+                  </button>
+                  <button>
+                    <FaLinkedin />
+                  </button>
+                  <button>
+                    <FaYoutube className="text-[3rem]" />
+                  </button>
+                </div>
+                <p className="text-xs mx-auto text-center pt-3">
+                  All Rights Reserved Mars Inc. 2025
+                </p>
+              </div>
             </div>
           </div>
         </div>
