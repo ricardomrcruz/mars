@@ -10,6 +10,10 @@ import { CiSquareChevRight } from 'react-icons/ci'
 import { FaDog, FaBowlRice, FaEarthAmericas } from 'react-icons/fa6'
 import { GiChocolateBar } from 'react-icons/gi'
 import { RiCommunityFill, RiMentalHealthFill } from 'react-icons/ri'
+import { IoIosBusiness } from 'react-icons/io' //big company
+import { LuNewspaper } from 'react-icons/lu' // news
+import { GiEcology } from 'react-icons/gi'
+import { FaCat } from 'react-icons/fa'
 
 {
   /* <IoIosClose /> */
@@ -253,7 +257,7 @@ export default function Nav() {
                   </span>
                 </div>
                 {/* DROPDOWNLINKS2 */}
-                <div className="pt-3  bg-gray-200 ">
+                <div className="pt-3  bg-gray-200 hidden">
                   <p className="text-sm text-left px-1">
                     Nous avons à cœur de bâtir un monde durable et sûr pour
                     l'ensemble des partenaires et des communautés avec lesquels
@@ -331,12 +335,154 @@ export default function Nav() {
                   </div>
                 </div>
               </button>
-              <button className="hover:text-blue-800 hover:font-semibold py-1 group flex">
-                <div className="flex uppercase">
-                  Actus et témoignages{' '}
-                  <span className=" hidden group-hover:block px-3 pt-1 ">
+              {/* ACTUS ET TEMOIGNAGES */}
+              <button className=" py-1 group">
+                <div className="flex uppercase hover:font-semibold  hover:text-blue-800">
+                  Actus et Témoignages
+                  <span className=" hidden group-hover:block px-3 pt-1">
                     <IoMdArrowDropdown color="black" />
                   </span>
+                </div>
+                {/* DROPDOWNLINKS2 */}
+                <div className="pt-3  bg-gray-200 ">
+                  <p className="text-sm text-left px-1">
+                    Découvrez comment nos Associés créent un monde meilleur pour
+                    demain dans nos derniers articles, actualités et communiqués
+                    de presse internationaux.
+                  </p>
+                  <button className="hover:underline hover:text-blue-800 text-sm flex  pt-2 px-1 group/a">
+                    Dernières actualités
+                    <span className="pt-1 px-2">
+                      <IoMdReturnRight className="text-black group-hover/a:text-blue-800 hover:font-bold" />
+                    </span>
+                  </button>
+                  <div className="pt-8 p-1 text-left">
+                    <div className="leading-loose">
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <div className="pt-4 text-xl">Explorer par sujet</div>
+                      {/* PLANET */}
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                      <div className="flex">
+                        <div className="mt-4 mb-2 ml-1 max-h-[4.5rem] mr-3 p-1 rounded-md  bg-gray-300">
+                          <FaEarthAmericas className="text-[1.5rem]" />
+                        </div>
+
+                        <div>
+                          <p className="pt-3 flex  hover:text-blue-800 hover:underline group/b">
+                            Engagés pour la planète
+                            <span className="pt-2 px-2 text-lg">
+                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                    </div>
+                  </div>
                 </div>
               </button>
             </div>
