@@ -45,7 +45,7 @@ export default function News() {
         {/* SUB ARTICLES */}
         <div className="my-4 bg-gray-300 h-[1px]"></div>
         <div className="w-full flex flex-wrap  justify-between">
-          <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[24%] h-auto flex justify-between">
+          <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[95%] h-auto flex justify-between">
             <div className="w-[50%] h-auto">
               <p className="pb-4 text-xs">Mars Wrigley Alsace</p>
               <p className="font-semibold text-sm">
@@ -54,8 +54,8 @@ export default function News() {
             </div>
             <img src={news2img} className=" w-[39%] object-cover" alt="" />
           </div>
-          <div className="w-[1px] h-[8.5rem] bg-slate-300" />
-          <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[24%] h-auto flex justify-between">
+          <div className=" md:block lg:block hidden w-[1px] h-[8.5rem] bg-slate-300" />
+          <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[95%] h-auto flex justify-between">
             <div className="w-[50%] ">
               <p className="pb-4 text-xs">Gestion Durable</p>
               <p className="font-semibold text-sm">
@@ -64,8 +64,8 @@ export default function News() {
             </div>
             <img src={news3img} className=" w-[39%] object-cover" alt="" />
           </div>
-          <div className=" sm:hidden w-[1px] h-[8.5rem] bg-slate-300" />
-          <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[24%] h-auto flex justify-between">
+          <div className=" sm:hidden md:block lg:block hidden w-[1px] h-[8.5rem] bg-slate-300" />
+          <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[95%] h-auto flex justify-between">
             <div className="w-[50%] ">
               <p className="pb-4 text-xs">M&Ms</p>
               <p className="font-semibold text-sm">
@@ -74,8 +74,8 @@ export default function News() {
             </div>
             <img src={news4img} className=" w-[39%] object-cover" alt="" />
           </div>
-          <div className=" w-[1px] h-[8.5rem] bg-slate-300" />
-          <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[24%] h-auto flex justify-between">
+          <div className=" w-[1px] h-[8.5rem] md:block lg:block hidden bg-slate-300" />
+          <div className="hover:bg-gray-200 cursor-pointer rounded-sm p-2 sm:w-[48%] lg:w-[24%] w-[95%] h-auto flex justify-between">
             <div className="w-[50%] ">
               <p className="pb-4 text-xs">Innovation Laitière</p>
               <p className="font-semibold text-sm">
