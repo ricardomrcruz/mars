@@ -74,19 +74,19 @@ export default function Nav() {
             isScrolled || isMenuOpen ? 'bg-gray-200' : 'bg-none '
           }`}
         >
-          <div className="w-[50%] ml-[60%] max-w-[1700px] flex text-sm tracking-tighter gap-3">
+          <div className="lg:w-[50%]  lg:ml-[60%] lg:max-w-[1700px] md:ml-[50%] ml-[20%] flex text-sm tracking-tighter lg:gap-3  gap-3">
             <button
-              className={`capitalize border ${isScrolled ? 'border-slate-900' : 'border-white opacity-80'}  px-2`}
+              className={`capitalize border ${isScrolled ? 'border-slate-900 hover:bg-slate-900 hover:text-gray-100' : 'border-white opacity-80 hover:bg-gray-100 hover:text-gray-900'}  px-2`}
             >
               Nous Contacter
             </button>
             <button
-              className={`capitalize border ${isScrolled ? 'border-slate-900' : 'border-white opacity-80'}  px-2`}
+              className={`capitalize border ${isScrolled ? 'border-slate-900 hover:bg-slate-900 hover:text-gray-100' : 'border-white opacity-80 hover:bg-gray-100 hover:text-gray-900'}  px-2`}
             >
               Demande des médias
             </button>
             <button
-              className={`capitalize border ${isScrolled ? 'border-slate-900' : 'border-white opacity-80'}  px-2`}
+              className={`capitalize border ${isScrolled ? 'border-slate-900 hover:bg-slate-900 hover:text-gray-100' : 'border-white opacity-80 hover:bg-gray-100 hover:text-gray-900'}  px-2`}
             >
               Carrières
             </button>
