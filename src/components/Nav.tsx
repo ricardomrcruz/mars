@@ -54,11 +54,7 @@ export default function Nav() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 px-6 py-10 md:py-[2.62rem] lg:py-11  ${
-        isScrolled || isMenuOpen
-          ? 'bg-gray-100 shadow-md text-slate-900'
-          : 'bg-none text-gray-200'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 px-6 "
       initial={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
       animate={{
         backgroundColor:
@@ -66,30 +62,66 @@ export default function Nav() {
       }}
       // transition={{ duration: 0.3 }}
     >
-      <div className="absolute top-0 left-0 w-full z-40 ">
-        <div className="max-w-[1700px] mx-auto w-full py-6">
-          <div className="flex items-center px-4 md:px-8 lg:px-12 justify-between ">
+      <div
+        className={` absolute top-0 left-0 w-full z-40 ${
+          isScrolled || isMenuOpen
+            ? 'bg-gray-100 shadow-md text-slate-900'
+            : 'bg-none text-gray-200'
+        }`}
+      >
+        <div
+          className={` mx-auto w-full py-2 flex ${
+            isScrolled || isMenuOpen ? 'bg-gray-200' : 'bg-none '
+          }`}
+        >
+          <div className="w-[50%] ml-[60%] max-w-[1700px] flex text-sm tracking-tighter gap-3">
+            <button
+              className={`capitalize border ${isScrolled ? 'border-slate-900' : 'border-white opacity-80'}  px-2`}
+            >
+              Nous Contacter
+            </button>
+            <button
+              className={`capitalize border ${isScrolled ? 'border-slate-900' : 'border-white opacity-80'}  px-2`}
+            >
+              Demande des médias
+            </button>
+            <button
+              className={`capitalize border ${isScrolled ? 'border-slate-900' : 'border-white opacity-80'}  px-2`}
+            >
+              Carrières
+            </button>
+          </div>
+        </div>
+        <div className="mx-auto max-w-[1605px] h-[1px] bg-gray-100 opacity-30"></div>
+        <div className="max-w-[1700px] mx-auto w-full">
+          <div className="flex items-center px-4 md:px-8 lg:px-12 justify-between py-3">
             {/* LOGO */}
-            <div className=" items-center">
-              <img src={logo} className="md:h-10 h-9 " alt="logo" />
+            <div className="items-center">
+              <img
+                src={logo}
+                className="lg:h-10 md:h-10 h-8 w-auto object-contain aspect-auto"
+                alt="logo"
+              />
             </div>
 
             {/* NAV DESKTOP LINKS */}
-            <div className="lg:flex hidden gap-5 uppercase lg:text-lg text-sm">
-              <button className="hover:text-blue-800 hover:font-semibold ">
-                À Propos
+            <div
+              className={`lg:flex hidden gap-[5.5rem] uppercase lg:text-[16px] text-sm  ${isScrolled ? 'text-slate-950 ' : 'text-white '}  `}
+            >
+              <button className="px-2 tracking-wider capitalize ">
+                Notre mission
               </button>
-              <button className="hover:text-blue-800 hover:font-semibold">
+              <button className="px-2 tracking-wider capitalize">
                 Nos Marques
               </button>
-              <button className="hover:text-blue-800 hover:font-semibold">
+              <button className="px-2 tracking-wider capitalize">
                 Développement Durable
               </button>
-              <button className="hover:text-blue-800 hover:font-semibold">
+              <button className="px-2 tracking-wider capitalize">
                 Actus et témoignages
               </button>
             </div>
-            <div className="hidden lg:block text-white text-2xl">
+            <div className="hidden lg:block text-white  ">
               <FiSearch color={`${isScrolled ? 'black' : 'white'}`} />
             </div>
 
