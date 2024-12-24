@@ -159,7 +159,7 @@ export default function Nav() {
               </div>
               <div className="lg:hidden flex flex-col gap-2 text-lg  px-4 md:px-8 lg:px-12 text-slate-900">
                 <button
-                  className=" text-left  py-1  group"
+                  className=" text-left  py-1  group" //k
                   onClick={() => dropMenu(0)}
                 >
                   <div className="hover:text-blue-800 hover:font-semibold flex uppercase tracking-tight">
