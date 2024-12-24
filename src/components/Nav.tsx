@@ -23,7 +23,6 @@ import {
   FaLinkedin,
   FaYoutube,
 } from 'react-icons/fa'
-import { FaExternalLinkAlt } from 'react-icons/fa'
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -70,7 +69,7 @@ export default function Nav() {
         }`}
       >
         <div
-          className={` mx-auto w-full py-2 flex ${
+          className={` mx-auto w-full py-2 lg:flex md:flex   hidden ${
             isScrolled || isMenuOpen ? 'bg-gray-200' : 'bg-none '
           }`}
         >
@@ -92,7 +91,7 @@ export default function Nav() {
             </button>
           </div>
         </div>
-        <div className="mx-auto max-w-[1605px] h-[1px] bg-gray-100 opacity-30"></div>
+        <div className="lg:flex md:flex  hidden mx-auto max-w-[1605px] h-[1px] bg-gray-100 opacity-30"></div>
         <div className="max-w-[1700px] mx-auto w-full">
           <div className="flex items-center px-4 md:px-8 lg:px-12 justify-between py-3">
             {/* LOGO */}
@@ -106,7 +105,7 @@ export default function Nav() {
 
             {/* NAV DESKTOP LINKS */}
             <div
-              className={`lg:flex hidden gap-[5.5rem] uppercase lg:text-[16px] text-sm  ${isScrolled ? 'text-slate-950 ' : 'text-white '}  `}
+              className={`lg:flex hidden xl:gap-[7rem] lg:gap-[1rem]  uppercase lg:text-[16px] text-sm  ${isScrolled ? 'text-slate-950 ' : 'text-white '}  `}
             >
               <button className="px-2 tracking-wider capitalize ">
                 Notre mission
@@ -144,20 +143,21 @@ export default function Nav() {
               )}
             </button>
           </div>
+          {/* <div className="flex items-center px-4 md:px-8 lg:px-12 justify-between py-3"></div> */}
 
           {/* -------------------------- MOBILE MENU NAV -------------------------------- */}
 
           {isMenuOpen ? (
-            <div className="lg:hidden fixed inset-0 top-[6.5rem] bg-gray-100   overflow-y-auto">
-              {/* <div className="h-[1px] w-[95%] mx-auto bg-slate-300"></div> */}
-              <div className="relative mx-auto text-center pb-5 ">
+            <div className="fixed inset-0 lg:absolute lg:pb-32 lg:bg-gray-200 lg:w-full md:top-[6.4rem] top-[4rem] bg-gray-100 overflow-y-auto lg:overflow-visible">
+              <div className="h-[1px]  bg-black bg-opacity-50 max-w-[1620px] mx-auto w-full  lg:block md:hidden sm:hidden"></div>
+              <div className="lg:hidden relative mx-auto text-center pb-5 py-1">
                 <input
                   type="text"
                   placeholder="Recherche..."
                   className=" bg-white w-[96%] md:w-[94%] mx-auto uppercase border-gray-900 border p-1 pl-2 rounded-sm text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-gray-200 "
                 />
               </div>
-              <div className="flex flex-col gap-2 text-lg  px-4 md:px-8 lg:px-12 text-slate-900">
+              <div className="lg:hidden flex flex-col gap-2 text-lg  px-4 md:px-8 lg:px-12 text-slate-900">
                 <button
                   className=" text-left  py-1  group"
                   onClick={() => dropMenu(0)}
@@ -606,7 +606,7 @@ export default function Nav() {
                 </button>
 
                 {/* BOTTOM LINKS MOBILE NAV */}
-                <div className="pt-[8.5rem] pb-[2rem]   text-sm font-semibold leading-[3rem]">
+                <div className="md:pt-[8.5rem] md:pb-[2rem] pt-[11rem] pb-[2.5rem]  text-sm font-semibold leading-[3rem]">
                   <div>
                     <button className="uppercase text-left">
                       <span className="border-black border-2 p-2 hover:bg-slate-200">
