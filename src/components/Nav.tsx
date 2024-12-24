@@ -148,7 +148,7 @@ export default function Nav() {
           {/* -------------------------- MOBILE MENU NAV -------------------------------- */}
 
           {isMenuOpen ? (
-            <div className="lg:hidden fixed inset-0 top-[4.1rem] bg-gray-100 pt-6 overflow-y-auto">
+            <div className="lg:hidden fixed inset-0 top-[6.5rem] bg-gray-100   overflow-y-auto">
               {/* <div className="h-[1px] w-[95%] mx-auto bg-slate-300"></div> */}
               <div className="relative mx-auto text-center pb-5 ">
                 <input
@@ -162,7 +162,7 @@ export default function Nav() {
                   className=" text-left  py-1  group"
                   onClick={() => dropMenu(0)}
                 >
-                  <div className="hover:text-blue-800 hover:font-semibold flex uppercase tracking-tighter">
+                  <div className="hover:text-blue-800 hover:font-semibold flex uppercase tracking-tight">
                     À propros
                     <span className="  px-3 pt-1">
                       <IoMdArrowDropdown color="black" />
@@ -227,7 +227,7 @@ export default function Nav() {
                 </button>
                 {/* nav link 2 */}
                 <button className=" py-1 group" onClick={() => dropMenu(1)}>
-                  <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tighter">
+                  <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tight">
                     Nos marques
                     <span className="  px-3 pt-1">
                       <IoMdArrowDropdown color="black" />
@@ -316,7 +316,7 @@ export default function Nav() {
                 </button>
                 {/* NAVLINK */}
                 <button className=" py-1 group" onClick={() => dropMenu(2)}>
-                  <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tighter">
+                  <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tight">
                     développement durable
                     <span className="  px-3 pt-1">
                       <IoMdArrowDropdown color="black" />
@@ -405,7 +405,7 @@ export default function Nav() {
                 </button>
                 {/* ACTUS ET TEMOIGNAGES */}
                 <button className=" py-1 group" onClick={() => dropMenu(3)}>
-                  <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tighter">
+                  <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tight">
                     Actus et Témoignages
                     <span className="  px-3 pt-1">
                       <IoMdArrowDropdown color="black" />
@@ -606,7 +606,7 @@ export default function Nav() {
                 </button>
 
                 {/* BOTTOM LINKS MOBILE NAV */}
-                <div className="pt-[9.3rem] pb-[2rem]   text-sm font-semibold leading-[3rem]">
+                <div className="pt-[8.5rem] pb-[2rem]   text-sm font-semibold leading-[3rem]">
                   <div>
                     <button className="uppercase text-left">
                       <span className="border-black border-2 p-2 hover:bg-slate-200">
