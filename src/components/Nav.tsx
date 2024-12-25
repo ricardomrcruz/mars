@@ -148,7 +148,7 @@ export default function Nav() {
           {/* -------------------------- MOBILE MENU NAV -------------------------------- */}
 
           {isMenuOpen ? (
-            <div className="fixed inset-0 lg:absolute lg:pb-36 lg:bg-gray-100 lg:w-full md:top-[6.4rem] top-[4rem] bg-gray-100 overflow-y-auto lg:overflow-visible">
+            <div className="fixed inset-0 lg:absolute lg:pb-[45vh] lg:bg-gray-100 lg:w-full md:top-[6.4rem] top-[4rem] bg-gray-100 overflow-y-auto lg:overflow-visible">
               <div className="h-[1px]  bg-gray-800 bg-opacity-10 max-w-[1620px] mx-auto w-full  lg:block md:hidden sm:hidden"></div>
               <div className="lg:hidden relative mx-auto text-center pb-5 py-1">
                 <input
@@ -159,71 +159,72 @@ export default function Nav() {
               </div>
               <div className=" flex flex-col gap-2 text-lg  px-4 md:px-8 lg:px-12 text-slate-900">
                 <button
-                  className=" text-left py-1 group"
+                  className="lg:pt-4 text-left py-1 group"
                   onClick={() => dropMenu(0)}
                 >
-                  <div className="hover:text-blue-800 hover:font-semibold flex uppercase tracking-tight pl-[2px]">
+                  <div className="lg:hidden  hover:text-blue-800 hover:font-semibold flex uppercase tracking-tight pl-[2px]">
                     À propros
                     <span className="  px-3 pt-1">
                       <IoMdArrowDropdown color="black" />
                     </span>
                   </div>
                   {/* DROPDOWN LINK1 */}
-                  {isDropdownOpen[0] ? (
-                    <div className="pt-3  bg-gray-200 bg-opacity-60 rounded-sm">
-                      <p className="text-sm text-left px-1">
-                        Depuis plus d'un siècle, nous sommes convaincus que le
-                        monde que nous voulons demain dépend de la façon dont
-                        nous agissons aujourd'hui.
-                      </p>
-                      <button className="hover:underline hover:text-blue-800 text-sm flex  pt-2 px-1 group/a">
-                        Vue d'ensemble
-                        <span className="pt-1 px-2">
-                          <IoMdReturnRight className="text-black group-hover/a:text-blue-800 hover:font-bold" />
-                        </span>
-                      </button>
-                      <div className="pt-8 p-1">
-                        <div className=" leading-loose">
-                          <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                          <p className="py-3 flex  hover:text-blue-800 hover:underline group/b">
-                            Les 5 Principes
-                            <span className="pt-2 px-2 text-lg">
-                              <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
-                            </span>
-                          </p>
-                          <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
 
-                          <p className="py-3 flex hover:underline hover:text-blue-800 group/c">
-                            Mars Compass
-                            <span className="pt-2 px-3">
-                              <CiSquareChevRight className="text-black text-xl group-hover/c:text-blue-800 hover:text-blue-800 transition-colors " />
-                            </span>
-                          </p>
-                          <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                          <p className="py-3 flex hover:underline hover:text-blue-800 group/d">
-                            L'équipe de direction
-                            <span className="pt-2 px-3">
-                              <CiSquareChevRight className="text-black text-xl group-hover/d:text-blue-800 hover:text-blue-800 transition-colors" />
-                            </span>
-                          </p>
-                          <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                          <p className="py-3 flex hover:underline hover:text-blue-800 group/e">
-                            Notre histoire
-                            <span className="pt-2 px-3">
-                              <CiSquareChevRight className="text-black text-xl group-hover/e:text-blue-800 hover:text-blue-800 transition-colors" />
-                            </span>
-                          </p>
-                          <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
-                          <p className="py-3 flex hover:underline hover:text-blue-800 group/f">
-                            Politiques et pratiques
-                            <span className="pt-2 px-3">
-                              <CiSquareChevRight className="text-black text-xl group-hover/f:text-blue-800 hover:text-blue-800 transition-colors" />
-                            </span>
-                          </p>
-                        </div>
+                  <div
+                    className={`lg:pt-1 lg:mx-auto lg:max-w-[1620px] lg:bg-gray-100 pt-3 bg-gray-200 bg-opacity-60 rounded-sm ${isDropdownOpen[0] ? '' : 'lg:block hidden'}`}
+                  >
+                    <p className="lg:w-[60%]  text-sm text-left px-1">
+                      Depuis plus d'un siècle, nous sommes convaincus que le
+                      monde que nous voulons demain dépend de la façon dont nous
+                      agissons aujourd'hui.
+                    </p>
+                    <button className="hover:underline hover:text-blue-800 text-sm flex  pt-2 px-1 group/a">
+                      Vue d'ensemble
+                      <span className="pt-1 px-2">
+                        <IoMdReturnRight className="text-black group-hover/a:text-blue-800 hover:font-bold" />
+                      </span>
+                    </button>
+                    <div className="lg:pt-3 pt-8 p-1">
+                      <div className="lg:leading-tight leading-loose">
+                        <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                        <p className="py-3 flex  hover:text-blue-800 hover:underline group/b">
+                          Les 5 Principes
+                          <span className="pt-2 px-2 text-lg">
+                            <CiSquareChevRight className="text-black text-xl group-hover/b:text-blue-800 hover:text-blue-800 transition-colors " />
+                          </span>
+                        </p>
+                        <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+
+                        <p className="py-3 flex hover:underline hover:text-blue-800 group/c">
+                          Mars Compass
+                          <span className="pt-2 px-3">
+                            <CiSquareChevRight className="text-black text-xl group-hover/c:text-blue-800 hover:text-blue-800 transition-colors " />
+                          </span>
+                        </p>
+                        <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                        <p className="py-3 flex hover:underline hover:text-blue-800 group/d">
+                          L'équipe de direction
+                          <span className="pt-2 px-3">
+                            <CiSquareChevRight className="text-black text-xl group-hover/d:text-blue-800 hover:text-blue-800 transition-colors" />
+                          </span>
+                        </p>
+                        <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                        <p className="py-3 flex hover:underline hover:text-blue-800 group/e">
+                          Notre histoire
+                          <span className="pt-2 px-3">
+                            <CiSquareChevRight className="text-black text-xl group-hover/e:text-blue-800 hover:text-blue-800 transition-colors" />
+                          </span>
+                        </p>
+                        <div className="h-[1px] w-full mx-auto bg-slate-300"></div>
+                        <p className="py-3 flex hover:underline hover:text-blue-800 group/f">
+                          Politiques et pratiques
+                          <span className="pt-2 px-3">
+                            <CiSquareChevRight className="text-black text-xl group-hover/f:text-blue-800 hover:text-blue-800 transition-colors" />
+                          </span>
+                        </p>
                       </div>
                     </div>
-                  ) : null}
+                  </div>
                 </button>
                 {/* nav link 2 */}
                 <button
