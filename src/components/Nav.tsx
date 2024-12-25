@@ -148,8 +148,8 @@ export default function Nav() {
           {/* -------------------------- MOBILE MENU NAV -------------------------------- */}
 
           {isMenuOpen ? (
-            <div className="fixed inset-0 lg:absolute lg:pb-32 lg:bg-gray-200 lg:w-full md:top-[6.4rem] top-[4rem] bg-gray-100 overflow-y-auto lg:overflow-visible">
-              <div className="h-[1px]  bg-black bg-opacity-50 max-w-[1620px] mx-auto w-full  lg:block md:hidden sm:hidden"></div>
+            <div className="fixed inset-0 lg:absolute lg:pb-36 lg:bg-gray-100 lg:w-full md:top-[6.4rem] top-[4rem] bg-gray-100 overflow-y-auto lg:overflow-visible">
+              <div className="h-[1px]  bg-gray-800 bg-opacity-10 max-w-[1620px] mx-auto w-full  lg:block md:hidden sm:hidden"></div>
               <div className="lg:hidden relative mx-auto text-center pb-5 py-1">
                 <input
                   type="text"
@@ -157,12 +157,12 @@ export default function Nav() {
                   className=" bg-white w-[96%] md:w-[94%] mx-auto uppercase border-gray-900 border p-1 pl-2 rounded-sm text-black placeholder-black focus:outline-none focus:ring-2 focus:ring-gray-200 "
                 />
               </div>
-              <div className="lg:hidden flex flex-col gap-2 text-lg  px-4 md:px-8 lg:px-12 text-slate-900">
+              <div className=" flex flex-col gap-2 text-lg  px-4 md:px-8 lg:px-12 text-slate-900">
                 <button
-                  className=" text-left  py-1  group" //k
+                  className=" text-left py-1 group"
                   onClick={() => dropMenu(0)}
                 >
-                  <div className="hover:text-blue-800 hover:font-semibold flex uppercase tracking-tight">
+                  <div className="hover:text-blue-800 hover:font-semibold flex uppercase tracking-tight pl-[2px]">
                     À propros
                     <span className="  px-3 pt-1">
                       <IoMdArrowDropdown color="black" />
@@ -170,7 +170,7 @@ export default function Nav() {
                   </div>
                   {/* DROPDOWN LINK1 */}
                   {isDropdownOpen[0] ? (
-                    <div className="pt-3  bg-gray-200 ">
+                    <div className="pt-3  bg-gray-200 bg-opacity-60 rounded-sm">
                       <p className="text-sm text-left px-1">
                         Depuis plus d'un siècle, nous sommes convaincus que le
                         monde que nous voulons demain dépend de la façon dont
@@ -226,7 +226,10 @@ export default function Nav() {
                   ) : null}
                 </button>
                 {/* nav link 2 */}
-                <button className=" py-1 group" onClick={() => dropMenu(1)}>
+                <button
+                  className="lg:hidden py-1 group"
+                  onClick={() => dropMenu(1)}
+                >
                   <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tight">
                     Nos marques
                     <span className="  px-3 pt-1">
@@ -315,7 +318,10 @@ export default function Nav() {
                   ) : null}
                 </button>
                 {/* NAVLINK */}
-                <button className=" py-1 group" onClick={() => dropMenu(2)}>
+                <button
+                  className="lg:hidden py-1 group"
+                  onClick={() => dropMenu(2)}
+                >
                   <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tight">
                     développement durable
                     <span className="  px-3 pt-1">
@@ -404,7 +410,10 @@ export default function Nav() {
                   ) : null}
                 </button>
                 {/* ACTUS ET TEMOIGNAGES */}
-                <button className=" py-1 group" onClick={() => dropMenu(3)}>
+                <button
+                  className="lg:hidden py-1 group"
+                  onClick={() => dropMenu(3)}
+                >
                   <div className="flex uppercase hover:font-semibold  hover:text-blue-800 tracking-tight">
                     Actus et Témoignages
                     <span className="  px-3 pt-1">
@@ -606,68 +615,71 @@ export default function Nav() {
                 </button>
 
                 {/* BOTTOM LINKS MOBILE NAV */}
-                <div className="md:pt-[8.5rem] md:pb-[2rem] pt-[11rem] pb-[2.5rem]  text-sm font-semibold leading-[3rem]">
-                  <div>
-                    <button className="uppercase text-left">
-                      <span className="border-black border-2 p-2 hover:bg-slate-200">
-                        Nous Contacter
-                      </span>
-                    </button>
+                {/* TODO */}
+                <div className=" lg:flex lg:flex-wrap lg:flex-row lg:leading-none lg:text-xs xl:gap-2 lg:gap-4 lg:pt-0 md:pt-[8rem] md:pb-[2rem] pt-[10rem] pb-[2.5rem] text-sm font-semibold leading-[3rem]">
+                  <div className=" flex-none lg:flex lg:gap-2">
+                    <div className="lg:basis-auto xl:pt-2 lg:pt-1">
+                      <button className="uppercase text-left ">
+                        <span className="lg:p-1  lg:border border-black border-2  p-2 hover:bg-slate-200">
+                          Nous Contacter
+                        </span>
+                      </button>
+                    </div>
+                    <div className="lg:basis-auto xl:pt-2  lg:pt-1">
+                      <button className="uppercase text-left">
+                        <span className="lg:p-1 lg:border border-black border-2  p-2 hover:bg-slate-200">
+                          Carrières
+                        </span>
+                      </button>
+                    </div>
+                    <div className="lg:basis-auto xl:pt-2  lg:pt-1">
+                      <button className="uppercase text-left">
+                        <span className="lg:p-1 lg:border border-black border-2 p-2 hover:bg-slate-200">
+                          Rapports sur le développement durable
+                        </span>
+                      </button>
+                    </div>
                   </div>
-                  <div>
-                    <button className="uppercase text-left">
-                      <span className="border-black border-2 p-2 hover:bg-slate-200">
-                        Carrières
-                      </span>
-                    </button>
-                  </div>
-                  <div>
-                    <button className="uppercase text-left">
-                      <span className="border-black border-2 p-2 hover:bg-slate-200">
-                        Rapports sur le développement durable
-                      </span>
-                    </button>
-                  </div>
-
-                  <div>
-                    <button className="uppercase text-left">
-                      <span className="border-black border-2 p-2 hover:bg-slate-200">
-                        Demande des médias
-                      </span>
-                    </button>
-                  </div>
-
-                  <div>
-                    <button className="uppercase text-left">
-                      <span className="border-black border-2 p-2 hover:bg-slate-200 ">
-                        Chaine d'approvisionnnement
-                      </span>
-                    </button>
-                  </div>
-                  <div>
-                    <button className="uppercase text-left">
-                      <span className="border-black border-2 p-2 hover:bg-slate-200">
-                        Politique et pratiques
-                      </span>
-                    </button>
+                  <div className=" flex-none lg:flex lg:gap-2">
+                    <div className="lg:basis-auto xl:pt-2  lg:pt-1">
+                      <button className="uppercase text-left">
+                        <span className="lg:p-1 lg:border border-black border-2 p-2 hover:bg-slate-200">
+                          Demande des médias
+                        </span>
+                      </button>
+                    </div>
+                    <div className="lg:basis-auto xl:pt-2  lg:pt-1">
+                      <button className="uppercase text-left">
+                        <span className="lg:p-1 lg:border border-black border-2 p-2 hover:bg-slate-200 ">
+                          Chaine d'approvisionnnement
+                        </span>
+                      </button>
+                    </div>
+                    <div className="lg:basis-auto xl:pt-2 lg:pt-1">
+                      <button className="uppercase text-left">
+                        <span className="lg:p-1 lg:border border-black border-2  p-2 hover:bg-slate-200">
+                          Politique et pratiques
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <div className="mx-auto text-gray-500 text-[2.7rem] font-semibold  py-[1rem]">
+                <div className="lg:hidden mx-auto text-gray-500 text-[2.7rem] font-semibold  py-[1rem]">
                   <div className="gap-4 flex">
                     <button>
                       <FaInstagramSquare />
                     </button>
                     <button>
-                      <FaFacebook className="text-[2.5rem]" />
+                      <FaFacebook className="lg:text-[2rem] text-[2.5rem]" />
                     </button>
                     <button>
                       <FaLinkedin />
                     </button>
                     <button>
-                      <FaYoutube className="text-[3rem]" />
+                      <FaYoutube className="lg:text-[2rem] text-[3rem]" />
                     </button>
                   </div>
-                  <p className="text-xs mx-auto text-center pt-3">
+                  <p className="lg:text-[0.6rem] text-xs mx-auto text-center pt-3">
                     All Rights Reserved Mars Inc. 2025
                   </p>
                 </div>
